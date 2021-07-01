@@ -114,7 +114,7 @@ pub fn add_two_numbers(
                             }
                         }
                         break;
-                    },
+                    }
                 }
             }
             result_list
@@ -124,7 +124,7 @@ pub fn add_two_numbers(
 
 #[cfg(test)]
 mod tests {
-    use super::{ListNode, add_two_numbers};
+    use super::{add_two_numbers, ListNode};
     #[test]
     fn it_works() {
         let mut l1 = ListNode::new(3);
@@ -137,7 +137,7 @@ mod tests {
         match add_two_numbers(Some(Box::new(l1)), Some(Box::new(l2))) {
             Some(sum_node) => {
                 println!("{}", sum_node);
-            },
+            }
             None => panic!("error"),
         };
     }
